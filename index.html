@@ -3,200 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social Links - YouTube & Discord</title>
+    <title>My Links</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            font-family: Arial, sans-serif;
+            max-width: 400px;
+            margin: 100px auto;
             padding: 20px;
-        }
-
-        .container {
             text-align: center;
-            background: white;
-            padding: 50px 40px;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            max-width: 500px;
-            width: 100%;
         }
-
-        .logo-area {
-            width: 100px;
-            height: 100px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 30px;
-        }
-
-        .logo-text {
+        a {
+            display: block;
+            padding: 15px;
+            margin: 10px 0;
             color: white;
-            font-size: 24px;
-            font-weight: bold;
-            letter-spacing: 2px;
-        }
-
-        h1 {
-            color: #333;
-            margin-bottom: 10px;
-            font-size: 2em;
-            font-weight: 600;
-        }
-
-        .subtitle {
-            color: #666;
-            margin-bottom: 40px;
-            font-size: 1.1em;
-        }
-
-        .links {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .link-card {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-            padding: 18px 30px;
-            border-radius: 15px;
             text-decoration: none;
-            color: white;
-            font-size: 1.2em;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
+            border-radius: 8px;
+            font-size: 18px;
         }
-
-        .link-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-            transition: left 0.5s;
-        }
-
-        .link-card:hover::before {
-            left: 100%;
-        }
-
-        .link-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-        }
-
         .youtube {
-            background: linear-gradient(135deg, #FF0000, #CC0000);
+            background: #FF0000;
         }
-
         .discord {
-            background: linear-gradient(135deg, #5865F2, #4752C4);
+            background: #5865F2;
         }
-
-        .link-icon {
-            font-size: 24px;
-            font-weight: bold;
-            width: 30px;
-            height: 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 2px solid rgba(255, 255, 255, 0.8);
-            border-radius: 50%;
-            z-index: 1;
-        }
-
-        .link-text {
-            z-index: 1;
-        }
-
-        .arrow {
-            margin-left: auto;
-            z-index: 1;
-            transition: transform 0.3s ease;
-            font-size: 1.2em;
-        }
-
-        .link-card:hover .arrow {
-            transform: translateX(5px);
-        }
-
-        .footer {
-            margin-top: 40px;
-            color: #999;
-            font-size: 0.9em;
-        }
-
-        .dot {
-            width: 8px;
-            height: 8px;
-            background: white;
-            border-radius: 50%;
-            display: inline-block;
-            margin: 0 2px;
-        }
-
-        @media (max-width: 480px) {
-            .container {
-                padding: 30px 20px;
-            }
-            
-            h1 {
-                font-size: 1.5em;
-            }
-            
-            .link-card {
-                padding: 15px 20px;
-                font-size: 1em;
-            }
+        a:hover {
+            opacity: 0.9;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="logo-area">
-            <span class="logo-text">SL</span>
-        </div>
-        
-        <h1>Connect With Me</h1>
-        <p class="subtitle">Find me on these platforms</p>
-        
-        <div class="links">
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="link-card youtube">
-                <span class="link-icon">Y</span>
-                <span class="link-text">YouTube Channel</span>
-                <span class="arrow">&rarr;</span>
-            </a>
-            
-            <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="link-card discord">
-                <span class="link-icon">D</span>
-                <span class="link-text">Discord Server</span>
-                <span class="arrow">&rarr;</span>
-            </a>
-        </div>
-        
-        <div class="footer">
-            <p>Click the links above to visit each platform</p>
-        </div>
-    </div>
+    <h1>My Links</h1>
+    
+    <a href="https://youtube.com" class="youtube">YouTube</a>
+    <a href="https://discord.com" class="discord">Discord</a>
 </body>
 </html>
